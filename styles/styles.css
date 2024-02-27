@@ -1,0 +1,205 @@
+.body {
+    font-family: "Outfit", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: var(--eggshell);
+}
+
+.card {
+    box-sizing: border-box;
+    background-color: var(--white);
+    border-radius: 24px;
+    width: 736px;
+    margin: auto;
+    padding: 40px;
+}
+
+.omelette__image {
+    display: block;
+    border-radius: 12px;
+    object-fit: contain;
+    max-width: 656px;
+    margin-bottom: 40px;
+}
+
+.main__header {
+    font-family: 'YoungSerif', sans-serif;
+    font-size: 40px;
+    color: var(--dark-charcoal);
+    margin-bottom: 24px;
+    line-height: 100%;
+}
+
+.main__description {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+
+.time {
+    background-color: var(--snow);
+    padding: 28px;
+    margin-bottom: 32px;
+}
+
+.time__header {
+    color: var(--dark-raspberry);
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 16px;
+    line-height: 100%;
+}
+
+.time__list {
+    list-style-position:inside;
+}
+
+.time__list-item::marker {
+    color: var(--dark-raspberry);
+    font-size: 12px;
+}
+
+.time__list-item {
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--wenge-brown);
+    margin-left: 8px;
+    margin-bottom: 6px;
+}
+
+.time__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.ingredients {
+    margin-bottom: 32px;
+}
+
+.ingredients__header {
+    font-family: 'YoungSerif', sans-serif;
+    font-size: 28px;
+    color: var(--brandy-red);
+    margin-bottom: 24px;
+    line-height: 100%;
+}
+
+.ingredients__list {
+    list-style-position:inside;
+}
+
+.ingredients__list-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--wenge-brown);
+    margin-bottom: 6px;
+    margin-left: 8px;
+}
+
+.ingredients__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.ingredients__list-item::marker {
+    color: var(--brandy-red);
+    font-size: 12px;
+}
+
+.decorative-line {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--white-coffee);
+    margin-bottom: 32px;
+    padding: 0;
+}
+
+.instructions {
+    margin-bottom: 32px;
+}
+
+.instructions__header {
+    font-family: 'YoungSerif', sans-serif;
+    line-height: 100%;
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--brandy-red);
+    margin-bottom: 24px;
+}
+
+.instructions__list {
+    list-style-position: inside;
+}
+
+.instructions__list-item {
+    margin-bottom: 8px;
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--wenge-brown);
+}
+
+.instructions__list-item::marker {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--brandy-red);
+}
+
+.bullet-margin {
+    margin-left: 16px;
+}
+
+.nutrition__header {
+    font-family: 'YoungSerif', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 100%;
+    color: var(--brandy-red);
+    margin-bottom: 24px;
+}
+
+.nutrition__table-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--wenge-brown);
+    margin-bottom: 24px;
+}
+
+.nutrition__table {
+    width: 100%;
+}
+
+.nutrition__table-data {
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--wenge-brown);
+    padding-left: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--white-coffee);;
+}
+
+.nutrition__table-row:last-child .nutrition__table-data {
+    border-bottom: none;
+}
+
+.nutrition__table-row:first-child {
+    margin-top: 0;
+}
+
+.nutrition__table-row {
+    margin: 12px 0;
+}
+
+.nutrition__table-row:last-child {
+    margin-bottom: 0;
+}
+
+.nutrition_amount {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--brandy-red);
+}

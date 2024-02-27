@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: 'YoungSerif';
+    src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+	--dark-charcoal: #312e2c;
+	--dark-raspberry: #7a284e;
+	--brandy-red: #854632;
+	--wenge-brown: #5f564d;
+	--eggshell: #f3e5d7;
+	--white-coffee: #e3ddd7;
+	--snow: #fff7fb;
+	--white: #fff;
+}
