@@ -128,22 +128,28 @@
 }
 
 .instructions__list {
-    list-style-position: inside;
+    list-style: none;
+    counter-reset: count;
+    position: relative;
 }
 
 .instructions__list-item {
     margin-bottom: 8px;
-    margin-left: 8px;
     font-size: 16px;
     line-height: 150%;
     color: var(--wenge-brown);
+    margin-left: 40px;
 }
 
-.instructions__list-item::marker {
+.instructions__list-item::before {
+    counter-increment: count;
+    content: counter(count) '. ';
+    color: var(--brandy-red);
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
-    color: var(--brandy-red);
+    position: absolute;
+    left: 8px;
 }
 
 .bullet-margin {
@@ -169,37 +175,45 @@
 
 .nutrition__table {
     width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.nutrition__table-row {
+    border-bottom: 1px solid var(--white-coffee);
 }
 
 .nutrition__table-data {
     font-size: 16px;
     line-height: 150%;
     color: var(--wenge-brown);
-    padding-left: 32px;
+    padding-bottom: 10px;
     padding-top: 12px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--white-coffee);;
 }
 
-.nutrition__table-row:last-child .nutrition__table-data {
-    border-bottom: none;
+.nutrition__table-row:first-child .nutrition__table-data{
+    padding-top: 0;
 }
 
-.nutrition__table-row:first-child {
-    margin-top: 0;
+.nutrition__table-row:last-child .nutrition__table-data{
+    padding-bottom: 0;
 }
 
-.nutrition__table-row {
-    margin: 12px 0;
-}
-
-.nutrition__table-row:last-child {
-    margin-bottom: 0;
+.nutrition__table-row .nutrition__table-data:first-child {
+    padding-left: 32px;
 }
 
 .nutrition_amount {
-    font-weight: 700;
+    font-family: "Outfit", sans-serif;;
+    font-weight: 700; 
     font-size: 16px;
     line-height: 150%;
     color: var(--brandy-red);
+    padding-left: 10px;
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
