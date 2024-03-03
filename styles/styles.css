@@ -12,6 +12,7 @@
     width: 736px;
     margin: auto;
     padding: 40px;
+    margin-top: 123px;
 }
 
 .omelette__image {
@@ -216,4 +217,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 124px;
 }
