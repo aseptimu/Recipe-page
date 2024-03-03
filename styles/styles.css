@@ -219,3 +219,26 @@
     align-items: center;
     margin-bottom: 124px;
 }
+
+@media (max-width: 375px) {
+    .card {
+        max-width: 375px;
+        margin-top: 0;
+        padding: 0 32px;
+        border-radius: 0;
+    }
+    .omelette__image {
+        width: 100vw;
+        border-radius: 0;
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-left: -32px;
+    }
+    .main__header {
+        font-size: 36px;
+    }
+    .attribution {
+        margin-bottom: 0;
+    }
+}
